@@ -1,0 +1,512 @@
+body {
+    background: url(http://abali.ru/wp-content/uploads/2013/05/goluboy_fon-600x375.jpg) no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 120%;
+    /* Современные браузеры */
+}
+
+#slides {
+    position: relative;
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background: url(https://way2day.com/wp-content/uploads/2017/12/Doktor-Strendzh.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(2) {
+    background: url(https://way2day.com/wp-content/uploads/2018/07/CHelovek-pauk-Vozvrashhenie-domoj.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(3) {
+    background: url(https://way2day.com/wp-content/uploads/2018/07/Novyj-CHelovek-pauk.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(4) {
+    background: url(https://way2day.com/wp-content/uploads/2017/12/Tor-tsarstvo-tmy.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+.slide:nth-of-type(5) {
+    background: url(https://way2day.com/wp-content/uploads/2018/07/Rosomaha-Bessmertnyj.jpg);
+    width: 700px;
+    height: 200px;
+}
+
+body {
+    display: inline;
+}
+
+.container {
+    width: 200px;
+    height: 95px;
+    margin-left: 750px;
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 95px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+iframe {
+    margin-left: 980px;
+    position: absolute;
+    top: 18px;
+}
+
+ul.topnav {
+    position: absolute;
+    margin-left: 0px;
+    list-style-type: none;
+    margin-top: 65px;
+    padding: 0;
+    background-color: #87CEFA;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul.topnav li {
+    float: left;
+    width: 230px;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {
+    background-color: #4682B4;
+    width: 200px;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+.vertical-menu {
+    width: 300px;
+    height: 220px;
+    overflow-y: auto;
+    margin-left: 1030px;
+    position: absolute;
+    top: 260px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #4682B4;
+}
+
+.vertical-menu a.active {
+    background-color: #87CEFA;
+    color: white;
+}
+
+.scarlet {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 170px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.press {
+    vertical-align: middle;
+    margin-left: 122px;
+    margin-top: 270px;
+    position: absolute;
+    width: 920px;
+}
+
+.weather {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 167px;
+}
+
+
+
+.calendar {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 134px;
+}
+
+
+
+
+
+
+
+
+
+.switchess{
+  position: absolute;
+  margin-left: 1135px;
+  margin-top: 350px;
+  width: 100px;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 75px;
+  height: 34px;
+  margin-top: 20px;
+  
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-select {
+  margin-left: 55px;
+    margin-top:400px;
+    position: absolute;
+    font-family: Arial;
+    
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.omg {
+    width: 450px;
+    padding-top: 40px;
+    position: absolute;
+  margin-left:450px;
+  margin-top:410px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    margin-left: -30px;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.alert.info {
+    background-color: #2196F3;
+}
+
+.alert.warning {
+    background-color: #ff9800;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the input container */
+
+.input-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 517px;
+    margin-top: -100px;
+}
+
+
+/* Style the form icons */
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+
+/* Style the input fields */
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+
+/* Set a style for the submit button */
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 517px;
+    margin-top: 100px;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.btn:hover {
+    opacity: 1;
+}
